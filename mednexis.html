@@ -1,64 +1,111 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Mednexis | Future of AI Surgery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mednexis Surgical AI</title>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     body {
-      background-color: #111;
-      color: #f2f2f2;
-      font-family: 'Segoe UI', sans-serif;
-      text-align: center;
-      padding: 40px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom right, #101c2c, #243B55);
+      color: white;
+      line-height: 1.6;
     }
-    h1 {
-      font-size: 3em;
-      color: #00ffcc;
-    }
-    p {
-      font-size: 1.2em;
-      margin-bottom: 30px;
-    }
-    button {
-      background-color: #00ffcc;
-      border: none;
-      color: #111;
-      padding: 10px 20px;
-      font-size: 1em;
-      border-radius: 5px;
-      cursor: pointer;
-      margin: 10px;
-    }
-    button:hover {
-      background-color: #00ccaa;
-    }
-    form {
-      margin-top: 40px;
-      background: #222;
+    header {
+      background-color: #0d1b2a;
       padding: 20px;
-      border-radius: 10px;
-      display: inline-block;
+      text-align: center;
     }
-    input {
-      margin: 10px;
+    header h1 {
+      font-size: 40px;
+      margin-bottom: 5px;
+    }
+    header p {
+      font-size: 16px;
+      color: #ccc;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #1b263b;
       padding: 10px;
-      width: 200px;
-      border-radius: 5px;
-      border: none;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #00c6ff;
+    }
+    .section {
+      padding: 80px 20px;
+      text-align: center;
+    }
+    .section h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    .section p {
+      font-size: 18px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .btn {
+      margin-top: 30px;
+      display: inline-block;
+      background: #00c6ff;
+      color: #000;
+      padding: 15px 30px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #0072ff;
+      color: white;
+    }
+    footer {
+      background-color: #0d1b2a;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to Mednexis</h1>
-  <p>Building intelligent surgical support systems for the future of medicine.</p>
-
-  <button onclick="alert('We are working on MedAI Surgical Bot v1.0')">Learn More</button>
-
-  <form>
-    <h2>Doctor Signup</h2>
-    <input type="text" placeholder="Your Name" required><br>
-    <input type="email" placeholder="Your Email" required><br>
-    <button type="submit">Join Us</button>
-  </form>
+  <header>
+    <h1>Mednexis Surgical AI</h1>
+    <p>Advanced Medical Intelligence for Surgical Excellence</p>
+  </header>  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#signup">Doctor Sign-Up</a>
+    <a href="#contact">Contact</a>
+  </nav>  <section id="home" class="section">
+    <h2>Welcome to Mednexis</h2>
+    <p>We build intelligent surgical AI systems that assist doctors with high-precision operations to revolutionize modern healthcare.</p>
+    <a href="mednexis.html" class="btn">Doctor Sign-Up</a>
+  </section>  <section id="about" class="section" style="background-color:#1b263b;">
+    <h2>About Us</h2>
+    <p>Mednexis is an AI startup focused on enhancing surgical accuracy and safety through machine learning and intelligent automation. We collaborate with expert surgeons and engineers to design futuristic tools that assist during critical procedures. Our goal is to bring precision and predictive power to the operating room.</p>
+  </section>  <section id="signup" class="section">
+    <h2>Join Mednexis</h2>
+    <p>Are you a doctor looking to use cutting-edge AI to assist in surgeries? Join Mednexis and become part of the future of healthcare.</p>
+    <a href="mednexis.html" class="btn">Doctor Sign-Up Form</a>
+  </section>  <section id="contact" class="section" style="background-color:#1b263b;">
+    <h2>Contact Us</h2>
+    <p>Email: support@mednexis.in<br>Phone: +91-9876543210<br>Address: Pune, Maharashtra, India</p>
+    <a href="mailto:support@mednexis.in" class="btn">Email Us</a>
+  </section>  <footer>
+    &copy; 2025 Mednexis Pvt. Ltd. | All Rights Reserved
+  </footer>
 </body>
 </html>

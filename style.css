@@ -1,36 +1,71 @@
+/* General styles */
 body {
-  background: #0d1b2a;
-  color: #ffffff;
   font-family: 'Segoe UI', sans-serif;
-  padding: 20px;
+  background-color: #0f172a;
+  color: #f8fafc;
+  text-align: center;
+  padding: 2rem;
   margin: 0;
 }
 
-header {
-  background: #112e42;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
+h1, h2 {
+  color: #22d3ee;
 }
 
+p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+/* Container box */
+section, footer {
+  background-color: #1e293b;
+  padding: 1.5rem;
+  margin: 1rem auto;
+  border-radius: 12px;
+  max-width: 800px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* Theme buttons */
+button {
+  margin: 0.5rem;
+  padding: 0.7rem 1.4rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #334155;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #475569;
+}
+
+/* Light theme */
+body.light-mode {
+  background-color: #f1f5f9;
+  color: #1e293b;
+}
+
+body.light-mode section, 
+body.light-mode footer {
+  background-color: #e2e8f0;
+  color: #1e293b;
+}
+
+/* Dark theme */
+body.dark-mode {
+  background-color: #0f172a;
+  color: #f8fafc;
+}
+
+/* Header logo (future) */
 header h1 {
-  font-size: 28px;
-  color: #00ffae;
-}
-
-header p {
-  font-size: 16px;
-  margin-top: 5px;
-}
-
-section {
-  margin-top: 30px;
-  text-align: center;
-}
-
-footer {
-  margin-top: 40px;
-  text-align: center;
-  font-size: 14px;
-  color: #bbbbbb;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+  color: #14b8a6;
 }
